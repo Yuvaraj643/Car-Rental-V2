@@ -1,10 +1,10 @@
 export const config = {
   api: {
-    baseUrl: process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:5000",
+    baseUrl: process.env.NEXT_PRIVATE_API_URL || "http://127.0.0.1:5000",
     timeout: 30000,
   },
   razorpay: {
-    keyId: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID || "rzp_test_1234567890",
+    keyId: process.env.NEXT_PRIVATE_RAZORPAY_KEY_ID || "rzp_test_1234567890",
   },
   app: {
     name: process.env.NEXT_PUBLIC_APP_NAME || "DriveEase",
