@@ -30,7 +30,7 @@ export async function middleware(request: NextRequest) {
 
   // Get the user's role from the API
   try {
-    const apiResponse = await fetch(`${process.env.NEXT_PRIVATE_API_URL || "http://127.0.0.1:5000"}/api/role`, {
+    const apiResponse = await fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:5000"}/api/role`, {
       headers: {
         cookie: request.headers.get("cookie") || "",
       },
