@@ -110,7 +110,7 @@ export function HeroSection() {
             <Button
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-primary"
+              className="border-white text-primary hover:bg-white/90 hover:text-primary"
               asChild
             >
               <Link href="/how-it-works">How It Works</Link>
@@ -119,7 +119,7 @@ export function HeroSection() {
         </motion.div>
 
         {/* Floating car image */}
-        <motion.div
+        {/* <motion.div
           className="absolute bottom-10 right-10 hidden lg:block"
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
@@ -134,7 +134,7 @@ export function HeroSection() {
               className="opacity-80"
             />
           </motion.div>
-        </motion.div>
+        </motion.div> */}
       </div>
 
       {/* Scroll indicator */}
